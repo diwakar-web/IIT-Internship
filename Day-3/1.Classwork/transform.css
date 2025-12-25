@@ -1,0 +1,41 @@
+:root{
+    --primarycolor: #0dff00;
+}
+
+.div1,.div2,.div3{
+    height: 100px;
+    width: 100px;    
+}
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: blue;
+}
+
+.div3{
+    background-color:var(--primarycolor);
+    position: relative;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.div3:hover{
+    transform: scale(2);
+    transition: 1.0s ease-in-out;
+}
+.div1:hover{
+    transform: scale(2);
+    transition: 1.0s ease-in-out;
+
+}
+.div2:hover{
+    transform: scale(2);
+        transition: 1.0s ease-in-out;
+
+}

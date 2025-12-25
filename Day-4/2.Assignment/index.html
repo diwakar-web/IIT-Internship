@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Blog</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            height: 200vh;
+            background: linear-gradient(to bottom right, #004ff9, #fff94c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section .grid {
+            display: grid;
+            width: 90%;
+            height: 95%;
+            grid-template-columns: [first] 30% [second] 70% [third];
+            grid-template-rows: [first]10% [second] 80% [third];
+        }
+
+        .grid header {
+            grid-row: 1/2;
+            grid-column: 1/3;
+        }
+
+        .grid .sidebar {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            position: sticky;
+            top: 0px;
+            align-self: start;
+            background: linear-gradient(to right,#ffffff,#d4dfed);
+            text-align: center;
+            border-radius: 30px;
+            padding: 25px;
+            margin: 20px;
+        }
+
+        .grid main {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            border-left:10px solid black;
+            border-right:10px solid black;
+            margin: 20px;
+            border-radius: 30px;
+        }
+
+        .grid main h1 {
+            background-color: rgba(255, 255, 255, 0.425);
+            border: 2px solid rgba(255, 255, 255, 0.225);
+            border-radius: 20px;
+        }
+
+        .grid main p {
+            font-size: 130%;
+            margin: 25px;
+            background-color: rgba(255, 255, 255, 0.421);
+            padding:20px;
+            border-radius: 20px;
+            overflow: auto;
+
+        }
+
+        .grid footer {
+            grid-row: 3/4;
+            grid-column: 1/3;
+            display: flex;
+            background: black;
+            border-radius: 100px;
+        }
+        .grid footer ul {
+            list-style: none;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid footer ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 200%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            margin: 0px 5px;
+        }
+        .grid header {
+            display: flex;
+
+
+        }
+        
+
+        .grid header ul {
+            list-style: none;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid header ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 50px;
+            font-size: 200%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            margin: 0px 10px
+        }
+
+        .grid .sidebar ul {
+            list-style: upper-roman;
+            margin: 50px;
+            line-height: 2.5
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="grid">
+
+
+            <header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">FAQ</a></li>
+                </ul>
+            </header>
+
+
+            <div class="sidebar">
+                <hr><hr>
+                <h2>Blog Posts</h2>
+                <hr>
+                <hr>
+                <ul>
+                    <li>"5 Tools Every Web Developer Should Know in 2025"</li>
+                    <li>"How I Boosted My Focus and Cut My Screen Time in Half"</li>
+                    <li>"Expmloring the Hidden Ges of Himachal Pradesh"</li>
+                    <li>"From Doodles to Digital Art: My Creative Journey"</li>
+                    <li>"How I Landed My First Internship Without a Referral"</li>
+                </ul>
+            </div>
+
+
+            <main>
+                <h1>Mastering CSS Grid: A Beginner-Friendly Guide to Modern Layouts</h1>
+                <p>CSS Grid is a powerful and flexible two-dimensional layout system introduced in modern CSS to help
+                    developers design web pages with greater control and simplicity. Unlike Flexbox, which is limited to
+                    one direction at a time (either rows or columns), CSS Grid allows layout management in both
+                    directions simultaneously, making it ideal for creating full-page layouts with headers, sidebars,
+                    content areas, and footers. By using properties like grid-template-columns, grid-template-rows,
+                    grid-gap, and grid-area, developers can define precise structures and place elements exactly where
+                    they want them on the page. This reduces the need for nested divs or complex float-based designs.
+                    One of the key advantages of CSS Grid is its responsiveness—layouts can be easily adjusted using
+                    media queries without rewriting large portions of code. For example, a desktop layout with multiple
+                    columns can be effortlessly transformed into a single-column layout on smaller screens.
+                    Additionally, Grid can be combined with Flexbox to handle both macro layouts and micro component
+                    alignment within sections. Whether you’re designing a blog, an admin dashboard, or a photo gallery,
+                    CSS Grid provides a clean, maintainable, and efficient approach to layout design, saving time while
+                    enhancing the overall user experience. As browser support for Grid is now widespread, it's an
+                    essential tool in the toolkit of every front-end developer looking to build modern, responsive
+                    websites.
+                    CSS Grid has revolutionized the way developers think about and build web layouts. It allows you to
+                    divide a webpage into major regions or define the relationship between parts of a layout in terms of
+                    size, position, and layer. With just a few lines of CSS, you can create complex structures that
+                    previously required floats, positioning tricks, or external frameworks. For instance, using
+                    `grid-template-areas`, you can visually map out your layout like a blueprint, making your code more
+                    readable and organized. Grid also offers features like `auto-fill` and `auto-fit` that make it
+                    incredibly easy to create responsive designs without writing repetitive media queries. This makes it
+                    ideal for building dynamic layouts such as card grids, image galleries, and content sections that
+                    automatically adjust to different screen sizes. As front-end development continues to move toward
+                    cleaner, more maintainable code, CSS Grid stands out as a must-learn technology for anyone serious
+                    about modern web design. It not only saves time but also gives you the creative freedom to
+                    experiment with layouts that adapt beautifully across devices.
+                    In conclusion, CSS Grid is a game-changer for modern web development. It simplifies layout creation,
+                    enhances responsiveness, and brings clarity to code structure — all while giving developers the
+                    freedom to design visually rich, adaptable interfaces. Whether you're building a simple blog or a
+                    complex web application, mastering CSS Grid will not only improve your workflow but also
+                    future-proof your skillset in front-end development. As the web continues to evolve, tools like Grid
+                    make it easier than ever to create clean, efficient, and responsive designs that look great on any
+                    device. Now is the perfect time to start exploring CSS Grid and unlock the full potential of modern
+                    layout design.
+
+                </p>
+
+            </main>
+
+            <footer>
+                <ul>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">FAQ</a></li>
+                    <li><a href="index.html">Copyrights</a></li>
+                </ul>
+            </footer>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

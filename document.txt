@@ -1,0 +1,9 @@
+vite-project/
+├── src/
+│   ├── components/
+│   │   ├── TodoInput.jsx
+│   │   ├── TodoItem.jsx
+│   │   └── TodoList.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── App.css

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+</head>
+
+<body>
+
+
+    <script>
+        console.log("✅ 1. Variable and Data Types")
+
+        let a = 20;
+        var b = "Indian Institute Of Jammu";
+        const pi = 3.14;
+        var abc = true;
+        let c = null;
+        let d = undefined;
+
+        console.log(`type of ${a} is-`, typeof (a));
+        console.log(`type of ${b} is-`, typeof (b));
+        console.log(`type of ${pi} is-`, typeof (pi));
+        console.log(`type of ${abc} is-`, typeof (abc));
+        console.log(`type of ${c} is-`, typeof (c));
+        console.log(`type of ${d} is-`, typeof (d));
+        console.log("----------------------------------------")
+
+        console.log("✅ 2. Hoisting Demo");
+
+        console.log(x); // Output: undefined
+        var x = 10;
+        // console.log(y); // ❌ ReferenceError: Cannot access 'y' before initialization
+        let y = 20;
+
+
+        //Explanation:
+
+        //var declarations are hoisted to the top of their scope and initialized with undefined.
+        // Internally, it's as if the JavaScript engine does this:
+        // javascript
+
+        // var x;
+        // console.log(x); // undefined
+        // x = 10;
+
+        console.log("----------------------------------------")
+
+
+        console.log("✅ 3. User Greeting (Conditionals)");
+
+        // let name=prompt("Please Enter Your Name");
+        // let age=prompt("please enter your age");
+
+        // if(age<18){
+        //     alert(`Hey ${name} You are a teen!`);
+        // }
+        // else if(age>18 && age<60){
+        //     alert(`Welcome ${name}, you are an adult!`);
+        // }
+        // else{
+        //     alert(`hello ${name}, You are a senior citizen!`);
+        // }
+
+        console.log("----------------------------------------")
+
+
+        console.log("✅ 4. Looping Numbers");
+
+        for (let i = 1; i < 11; i++) {
+            console.log(i)
+        }
+        console.log("----------------------------------------")
+
+        let j = 1;
+        while (j <= 20) {
+            if (j % 2 == 0) {
+                console.log(j);
+            }
+            j++;
+        }
+
+        console.log("----------------------------------------")
+
+        let k = 10;
+        do {
+            console.log(k);
+            k--;
+        }
+        while (k > 0);
+        console.log("----------------------------------------")
+
+        console.log("✅ 5. Functions");
+
+        // let val1=prompt("Enter first Number-");
+        // let val2=prompt("Enter Second Number-")
+
+        // function sum(a,b){
+        //     let su=a+b;
+        //     alert( `The Sum is ${su}`)
+        // }
+        // sum(Number(val1), Number(val2));
+
+        console.log("----------------------------------------")
+
+        // let value=prompt("enter the value:");
+
+        // function square(a){
+        //     alert(`The Square Of ${a} is ${a**2}`);
+        // }
+        // square(Number(value));
+
+
+        // let name=prompt("Enter Your Name");
+        // let Hello=(a)=>{alert(`Hello ${a}`) }
+        // Hello(name)
+
+
+
+        console.log("----------------------------------------")
+        console.log("✅ 6. Callback Practice");
+
+
+        // Callback function
+        function doubleIt(n) {
+            console.log("Double is:", n * 2);
+        }
+
+        // Higher-order function that accepts a callback
+        function processNumber(num, callback) {
+            callback(num);
+        }
+
+        // Call processNumber with a number and the callback
+        processNumber(6, doubleIt);  // Output: Double is: 12
+
+    </script>
+
+</body>
+
+</html>

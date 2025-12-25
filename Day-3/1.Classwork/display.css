@@ -1,0 +1,27 @@
+span{
+    width: 100px;
+    background-color: red;
+    height: 100px;
+    display: block;
+}
+
+div{
+    width: 100px;
+    background-color: rgb(38, 0, 255);
+    height: 100px;
+    
+
+}
+.div4{
+    width: 100px;
+    background-color: rgb(14, 232, 134);
+    height: 100px;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}

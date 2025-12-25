@@ -1,0 +1,36 @@
+.NNH{
+    background-color: red;
+}
+span{
+    background-color: blue;}
+.headerlinks{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+.headerlinks,.footerlinks{
+    color:red
+}
+div button{color: cyan;
+background-color: black; }
+
+#CLICK{
+    font-size: 40pX;
+    border-radius: 100PX;
+
+}
+
+#CLICK:hover{
+    background-color: green ;
+    transition: 3s ease-in-out;
+}
+
+#dn::first-letter{
+    font-size: 50px;
+
+}
+
+p{
+    color: blue;
+}

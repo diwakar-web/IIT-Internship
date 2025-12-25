@@ -1,0 +1,24 @@
+#p1 {
+    color: #ff5547;
+
+}
+
+#p2 {
+    color: rgb(255, 55, 255)
+}
+
+#p3 {
+    width: 600px;
+    
+}
+
+div {
+    background-color: #47ff6c;
+    height: 100vh;
+}
+
+div p {
+    background-color: slateblue;
+    width: 90%;
+}
+

@@ -1,0 +1,94 @@
+#logo{
+    width: 250px;
+    margin-left: 630px;
+    margin-top: 30px;
+    padding:15px;
+    border: 5px double transparent;  
+      border-radius: 20px;  
+}
+#logo:hover{
+    border: 5px black double;
+    border-radius: 20px;
+
+}
+
+
+.writing{
+    margin-left: 30px;
+    margin-top: 150px;
+    background-color: rgba(246, 231, 231, 0.327);
+    padding: 15px;
+    width: 1400px;
+    border-radius: 50px;
+    border: 5px rgba(210, 207, 207, 0.375) solid;
+
+}
+.writing p{
+    width: 800px;
+    font-size: 23px;
+    padding: 10px;
+}
+.writing h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+.writing p::first-letter{
+    font-size: 50px;
+}
+
+.writing:hover{
+    background-color: rgba(0, 0, 0, 0.544);
+    color: rgb(213, 213, 213);
+    border-color:black ;
+    transition: .5s ease-in-out;
+}
+
+.image{
+    position:relative;
+    top: -470px;
+    right: 50px;
+    
+}
+.image img{
+   
+    border-radius:50% ;
+    border:5px rgba(210, 207, 207, 0.375) solid
+}
+
+.image img:hover{
+    border-color: rgba(0, 0, 0, 0.544);
+    transition: 0.5s ease-in-out;
+}
+
+
+#hobbies{
+    background-color: rgba(255, 255, 255, 0.304);
+    margin: 30px;
+    width: 1430px;
+    border-radius: 50px;
+    height: 200px;
+    border:5px rgba(210, 207, 207, 0.375) solid
+
+}
+
+#hobbies h1{
+    margin-left: 50px;
+    font-size: 35px;
+}
+#hobbies li{
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+#hobbies:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.282);
+    border-color: black;
+    text-decoration: underline;
+    transition: 0.5s  ease-in-out;
+    
+}
